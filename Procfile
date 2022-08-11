@@ -1,0 +1,1 @@
+web gunicorn Vitae.wsgi:application --log-file -
