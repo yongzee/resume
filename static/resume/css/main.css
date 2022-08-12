@@ -1670,7 +1670,7 @@ fieldset[disabled]
 
 .has-success:after,
 .has-danger:after {
-  font-family: 'Nucleo Outline';
+  font-family: 'Nucleo';
   content: "\ea22";
   display: inline-block;
   position: absolute;
@@ -1893,7 +1893,7 @@ textarea.form-control {
   transition: opacity 0.3s linear; }
 
 .checkbox label::after {
-  font-family: 'Nucleo Outline';
+  font-family: 'Nucleo';
   content: "\ea22";
   top: 0px;
   text-align: center;
@@ -2319,8 +2319,7 @@ p {
       color: rgba(255, 255, 255, 0.8); }
 
 body {
-  background-color: #121212;
-  color: #eee;
+  color: #2c2c2c;
   font-size: 14px;
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -2903,23 +2902,13 @@ img {
   color: inherit;
   box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2); }
 
-/* --------------------------------
 
-Nucleo Outline Web Font - nucleoapp.com/
-License - nucleoapp.com/license/
-Created using IcoMoon - icomoon.io
-
--------------------------------- */
-@font-face {
-  font-family: 'Nucleo Outline';
-  src: url("../fonts/nucleo.eot");
-  src: url("../fonts/nucleo.eot") format("embedded-opentype"), url("../fonts/nucleo.woff2") format("woff2"), url("../fonts/nucleo.woff") format("woff"), url("../fonts/nucleo.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-/*------------------------
 	base class definition
 -------------------------*/
+@font-face {
+  font-family: "Nucleo";
+  src: url({% static 'resume/fonts/Nucleo.ttf' %}) format(truetype);
+}
 .now-ui-icons {
   display: inline-block;
   font: normal normal normal 14px/1 'Nucleo';
