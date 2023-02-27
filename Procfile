@@ -1,1 +1,2 @@
-web gunicorn Vitae.wsgi:application --log-file -
+web: gunicorn app:app
+worker: rq worker --with-scheduler
